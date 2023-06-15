@@ -1,0 +1,125 @@
+{
+  "HEADER": {
+    "Dashboard": "Dashboard"
+  },
+  "SUPHOME": {
+    "Admins": "Admins"
+  },
+  "USER": {
+    "User": "Projects"
+  },
+  "LAYOUT": {
+    "Logout": "Logout"
+  },
+  "DROP_FILES": {
+    "Files": "Files",
+    "Categories": "Categories"
+  },
+  "UPLOAD_FILES": {
+    "Files": "Upload Files"
+  },
+  "COMMON": {
+    "Name": "Name",
+    "Email": "Email",
+    "Action": "Action",
+    "no_record": "No Records Found",
+    "Cancel": "Cancel",
+    "Add": "Add",
+    "Save": "Save",
+    "Update": "Update",
+    "Password": "Password",
+    "C_Password": "Confirm Password",
+    "Status": "Status",
+    "User_status": "User Status",
+    "project_status": "Project Status",
+    "Clear": "Clear",
+    "Description": "Description",
+    "Title": "Title",
+    "Active": "Active",
+    "NotActive": "Not Active",
+    "Search": "Search",
+    "Disabled": "Disabled",
+    "No": "No",
+    "Yes": "Yes",
+    "All": "All",
+    "Subject": "Subject",
+    "Body": "Body",
+    "Updated_Successfuly!": "Updated Successfully!",
+    "Variables": "Variables",
+    "Project_Progress": "Project Progress",
+    "key":"Key",
+    "english": "English",
+    "german": "German",
+    "other": "Other",
+    "upload_csv": "Upload",
+    "download_csv": "Download",
+    "refresh": "Refresh"
+  },
+  "CATEGORIES": {
+    "Categories": "Categories"
+  },
+  "PROJECT_STATUS": {
+    "Order": "Order",
+    "Progress": "Progress",
+    "Project_Status": "Project Status"
+  },
+  "SUPER_ADMIN": {
+    "Manage_User": "Manage Project",
+    "Categories": "Categories",
+    "Translations": "Translations",
+    "Translation_create": "Translation added successfully!",
+    "Translation_update": "Translation updated successfully!",
+    "Translation_delete": "Translation deleted successfully!",
+    "Translation_upload": "CSV uploaded successfully!",
+    "Project_Status": "Project Status",
+    "Settings": "Settings",
+    "Account_Creation": "Account Creation",
+    "Account_Activation": "Account Activation",
+    "Account_Suspension": "Account Suspension",
+    "Update_Project": "Update Project",
+    "Reset_Password": "Reset Password",
+    "Send_From_Email": "Send From Email"
+  },
+  "ADMIN": {
+    "Users": "Projects"
+  },
+  "CLIENT": {
+    "files": "Categories"
+  },
+  "TOOLTIP": {
+    "Delete_file": "Delete File"
+  },
+  "DELETE_MESSAGE": {
+    "Message": "Are you sure?"
+  },
+  "Previous_Image": "Previous Image",
+  "View_Image": "View Image",
+  "select_file": "Please select File",
+  "upload_file": "File uploaded successfully",
+  "error_msg": "Error Occurred. Please try again",
+  "delete_file": "File deleted successfully",
+  "delete_user": "User deleted successfully",
+  "cate_create": "Category saved successfully",
+  "cate_update": "Category updated successfully",
+  "client_create": "Client was added",
+  "client_update": "Client was update",
+  "admin_create": "Admin was added",
+  "admin_update": "Admin was added",
+  "profile_update": "Profile updated successfully",
+  "view": "View",
+  "delete": "Delete",
+  "more": "More",
+  "edit": "Edit",
+  "update_profile": "Update Profile",
+  "customer_name": "Customer Name",
+
+  "projekt_erstellt": "Project created",
+  "angebot_erwartet": "Offer expected",
+  "angebot_verschickt": "Offer sent",
+  "verkauft": "Sold",
+  "kundenservice": "Customer service",
+  "offerte_erstellt": "Offer created",
+  "offerte_geandert": "Offer changed",
+  "angebot_abgelehnt": "Offer rejected",
+  "projekt_abgeschlossen": "Project completed"
+}

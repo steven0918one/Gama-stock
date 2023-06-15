@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: "Net-Avenir-Light, sans-serif"; */
+}
+
+.az_layout_99 {
+  display: flex;
+  position: relative;
+  min-height: 100vh;
+}
+
+.az_main {
+  width: calc(100% - 250px);
+}
+
+.MuiDrawer-paper,
+.MuiDrawer-docked {
+  width: 250px;
+}
+
+@media (max-width: 900px) {
+  .az_main {
+    width: 100%;
+  }
+}
+
+.btn_dlt {
+  position: absolute;
+  bottom: -7px;
+  right: -7px;
+  background: yellow;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+}
+
+.file {
+  position: relative;
+}
+
+.qr-download {
+  cursor: pointer;
+}
+
+.qr-download:hover {
+  text-decoration: underline;
+}
+
+.MuiAlert-standardSuccess {
+  background-color: rgb(200, 241, 204) !important;
+  color: black !important;
+}
+
+.MuiTableHead-root>.MuiTableRow-head>.MuiTableCell-head {
+  color: #fff;
+}

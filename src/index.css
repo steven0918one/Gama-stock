@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Net-Avenir-Light";
+  src: url("./assets/fonts/Net-Avenir-Light.ttf");
+  font-weight: light;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Net-Avenir-Light", "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
