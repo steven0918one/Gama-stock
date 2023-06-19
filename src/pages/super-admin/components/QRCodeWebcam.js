@@ -110,7 +110,8 @@ function QRCodeWebcam({ handleClose, getData }) {
           <QrReader
             delay={300}
             onError={webcamError}
-            onScan={webcamScan}
+            onScan={webcamScan(
+              "302,NTllZGFiNjY2NjA4ZGEwYTIwMTg0ODU1ZDFhYTM0OWE=")}
             legacyMode={false}
             facingMode={"environment"}
           />

@@ -65,7 +65,6 @@ function ComponentForm({ handleClose }) {
   };
 
   const handleComponent = (item) => {
-    console.log('item :>> ', item);
     setFormData({ ...formData, type: item, component: item });
     let _manufacturer = [];
     if (Boolean(item?.manufacturers?.length)) {

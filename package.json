@@ -1,7 +1,7 @@
 {
   "name": "react-demo",
   "version": "0.1.0",
-  "homepage": "https://gama-portal.ch/apps/gama-stock/",
+  "homepage": "https://gama-portal.ch/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",

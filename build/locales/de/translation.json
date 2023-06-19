@@ -1,0 +1,130 @@
+{
+  "HEADER": {
+    "Dashboard": "Dashboard"
+  },
+  "SUPHOME": {
+    "Admins": "Admins"
+  },
+  "USER": {
+    "User": "Projekte"
+  },
+  "LAYOUT": {
+    "Logout": "Ausloggen"
+  },
+  "DROP_FILES": {
+    "Files": "Dateien",
+    "Categories": "Kategorien"
+  },
+  "UPLOAD_FILES": {
+    "Files": "Daten hochladen"
+  },
+  "COMMON": {
+    "Name": "Name",
+    "Email": "email",
+    "Action": "Aktion",
+    "no_record": "Keine Aufzeichnungen gefunden",
+    "Cancel": "Abbruch",
+    "Add": "Hinzufügen",
+    "Save": "Speichern",
+    "Update": "Aktualisieren",
+    "Password": "Passwort",
+    "C_Password": "Bestätigen Passwort",
+    "Status": "Status",
+    "User_status": "Benutzerstatus",
+    "project_status": "Projekt-Status",
+    "Clear": "Reset",
+    "Description": "Beschreibung",
+    "Title": "Titel",
+    "Active": "Aktiv",
+    "NotActive": "Nicht aktiv",
+    "Search": "Suche",
+    "Disabled": "Deaktiviert",
+    "No": "Nein",
+    "Yes": "Ja",
+    "All": "Alles",
+    "Subject": "Thema",
+    "Body": "Körper",
+    "Updated_Successfuly!": "Erfolgreich geupdated!",
+    "Variables": "Variablen",
+    "Project_Progress": "Projektfortschritt",
+    "key": "Taste",
+    "english": "Englisch",
+    "german": "Deutsch",
+    "other": "Andere",
+    "upload_csv": "Hochladen",
+    "download_csv": "Download",
+    "refresh": "Aktualisierung"
+  },
+  "CATEGORIES": {
+    "Categories": "Kategorien"
+  },
+  "PROJECT_STATUS": {
+    "Order": "Position",
+    "Progress": "Fortschritt",
+    "Project_Status": "Projekt-Status"
+  },
+  "SUPER_ADMIN": {
+    "Manage_User": "Benutzer verwalten",
+    "Categories": "Kategorien",
+    "Translations": "Übersetzungen",
+    "Translation_create": "Übersetzung erfolgreich hinzugefügt!",
+    "Translation_update": "Übersetzung erfolgreich aktualisiert!",
+    "Translation_delete": "Übersetzung erfolgreich gelöscht!",
+    "Translation_upload": "CSV erfolgreich hochgeladen!",
+    "Project_Status": "Projekt-Status",
+    "Settings": "Einstellungen",
+    "Account_Creation": "Konto-Erstellung",
+    "Account_Activation": "Account Aktivierung",
+    "Account_Suspension": "Kontoaufsetzung",
+    "Update_Project": "Projekt aktualisieren",
+    "Reset_Password": "Passwort zurücksetzen",
+    "Send_From_Email": "Senden Sie von E -Mails"
+  },
+  "ADMIN": {
+    "Users": "Projekte"
+  },
+  "CLIENT": {
+    "files": "Kategorien"
+  },
+  "TOOLTIP": {
+    "Delete_file": "Verwijder bestand"
+  },
+  "DELETE_MESSAGE": {
+    "Message": "Bist du dir sicher?"
+  },
+  "Previous_Image": "Vorheriges Bild",
+  "View_Image": "Bild ansehen",
+  "select_file": "Bitte wählen Sie Datei",
+  "upload_file": "Datei erfolgreich hochgeladen",
+  "error_msg": "Ein Fehler ist aufgetreten.Bitte versuche es erneut",
+  "delete_file": "Datei erfolgreich gelöscht",
+  "delete_user": "Benutzer erfolgreich gelöscht",
+  "cate_create": "Kategorie erfolgreich gespeichert",
+  "cate_update": "Kategorie erfolgreich aktualisiert",
+  "client_create": "Der Kunde wurde hinzugefügt",
+  "client_update": "Der Kunde wurde aktualisiert",
+  "admin_create": "Admin wurde hinzugefügt",
+  "admin_update": "Admin wurde hinzugefügt",
+  "profile_update": "Profil erfolgreich aktualisiert",
+  "view": "Ansicht",
+  "delete": "Löschen",
+  "more": "Mehr",
+  "edit": "Bearbeiten",
+  "update_profile": "Update profile",
+  "customer_name": "Kundenname",
+  "projekt_erstellt": "Projekt Erstellt",
+  "angebot_erwartet": "Angebot Erwartet",
+  "angebot_verschickt": "Angebot Verschickt",
+  "verkauft": "Verkauft",
+  "kundenservice": "Kundenservice",
+  "offerte_erstellt": "Offerte Erstellt",
+  "offerte_geandert": "Offerte Geändert",
+  "angebot_abgelehnt": "Angebot Abgelehnt",
+  "projekt_abgeschlossen": "Projekt Abgeschlossen",
+  "cate_create": "Kategorie erfolgreich erstellt",
+  "cate_update": "Kategorie erfolgreich erstellt",
+  "client_create": "Der Kunde wurde hinzugefügt",
+  "client_update": "Klant wurde Update",
+  "admin_create": "Admin wurde hinzugefügt",
+  "admin_update": "Admin wurde hinzugefügt"
+}

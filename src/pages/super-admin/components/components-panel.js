@@ -168,13 +168,11 @@ export default function ComponentsPanel() {
         "get",
         "manager/components?" + stringOfParams
       );
-      // const data = APIdata;
 
-
+      console.log('data[2] :>> ', data[2]);
       makeExportData(data[2].data);
       setRecords(data[2]);
 
-      console.log('data[2] :>> ', data[2]);
       let activeCount = 0;
       let countOfImages = 0;
       let pageTotalQuantities = 0;
@@ -223,7 +221,6 @@ export default function ComponentsPanel() {
 
   const makeExportData = (data) => {
     let exportData = [];
-    console.log('columns :>> ', columns);
     data.forEach(e => {
       exportData.push({
         ID: e.id,
@@ -948,6 +945,7 @@ const rowsOption = [
   { label: "50 Rows", value: "50" },
   { label: "75 Rows", value: "75" },
   { label: "100 Rows", value: "100" },
+  { label: "All", value: "100000" },
 ];
 
 const langOptions = [

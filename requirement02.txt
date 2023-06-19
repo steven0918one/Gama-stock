@@ -1,0 +1,71 @@
+1. Export as CSV v.1.1 new feature  //
+Function to export the current filtered view and have a download button for CSV data, compatible with excel.
+
+The export looks great. Does it export the current filtered view? That would be perfect, then user can export whatever he likes.
+
+2. Control of sortable table (also for click on item for details) v.1.1 new feature
+I know Telerik as know for such controls. If license is needed, let me know.
+
+https://www.telerik.com/videos/react-data-grid-(table)-sorting-filtering-and-grouping-kendoreact-grid-demo
+
+What I found for free: https://reactscript.com/excel-like-react-data-grid-component/
+
+
+arrows with different coloring.jpg to card Control of sortable table (also for click on item for details)
+
+If columns like ID and Image (available or not) and type and technology can be sorted, it can also work for now. 
+The active arrow should be white, the non active little darker 
+in sorting. I attach a sample image.https://youtu.be/Q9aYU1Ufkpk?t=674
+
+The sortable table is meant as control. In the future we can use it again on other projects.
+ mainly such a control can sort by every column. with arrow up/down its clear how its sorted. 
+ Sample:https://youtu.be/8SL_hM1a0yo?t=1455
+
+
+3. Summary of columns in footer V.1.2 new feature //
+...it should list the summary the columns and price on the bottom. screenshot attached.
+
+        At the moment it counts always a same value. But it should be related the column. 
+        For example if the column is "component type" then in footer it should show the count of current showed component types, 
+        for example 4. If the title is "stock warning count" it can count how many components are below the stock threshold. 
+        There are some columns with no clear usage. But at the moment there is the count always of all components,
+         which is not reflecting anything if its displayed several times again.
+
+        Every column would be great to see something related, if not possible, it can be blank.
+
+
+
+        Status: Count of active status
+        Count: Summary (just of current in view, important also for CSV export)
+        Component pictures: Count of items with a picture:
+        Component type: count of different types
+
+
+        ID: largest ID
+        Technologies: Count of technologies
+
+
+4. Id in Column(new feature) //
+
+Add ID of product, default should be disabled + remember the view setting on user. //
+
+5. Role to view only new feauture
+
+        Rule needed to set user to view only.
+        Just to explain role system again, I guess we never did dicuss in detail just to short.
+        Normally roles are give with static view. SuperAdmin/Admin/User. MyUsername.Role = Admin
+        But in our system a role is just a tag the system can check for it on user. It can be checked by frontend or backend. 
+        MyUsername.Roles: Login;Stockmanager;Plumber;StorageAdmin;
+        So in the future we need to update this part from a single request to a function of request like 
+        DoesThisUserContainRole("Plumber)": bool
+
+6. Field for minimum order quantity
+
+7. Search / Filter for protocol
+
+8. Next to Serial number the count to reduce
+Add field for count instead of always take the 1 from QR-Code. Will remember last used count (other task)
+
+
+devdragon1129@gmail.com
+Aa123456!
