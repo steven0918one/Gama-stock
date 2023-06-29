@@ -108,6 +108,7 @@ export default function ComponentsPanel() {
   const dispatch = useDispatch();
 
   React.useEffect(() => {
+    exportCSV();
     getData();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pagination_number, orderBy, perPage]);
@@ -117,6 +118,7 @@ export default function ComponentsPanel() {
     setIsDesktop(window.innerWidth < 1350);
     setIsLaptop(window.innerWidth < 1125)
     setIsMobile(window.innerWidth < 550);
+
     const handleResizeWindow = () => {
       setIsDesktop(window.innerWidth < 1350);
       setIsLaptop(window.innerWidth < 1125)
@@ -135,6 +137,7 @@ export default function ComponentsPanel() {
     dispatch(setPaginationCurrent(1));
     dispatch(setIsFilterApply(true));
     getData();
+    exportCSV();
   };
 
   const clearAllFilters = () => {
@@ -162,6 +165,7 @@ export default function ComponentsPanel() {
         orderby: orderBy.order,
         counting: true,
       };
+
       let stringOfParams = qs.stringify(params);
 
       let { data } = await API(
@@ -169,8 +173,6 @@ export default function ComponentsPanel() {
         "manager/components?" + stringOfParams
       );
 
-      console.log('data[2] :>> ', data[2]);
-      makeExportData(data[2].data);
       setRecords(data[2]);
 
       let activeCount = 0;
@@ -218,6 +220,31 @@ export default function ComponentsPanel() {
       return count.size;
   };
 
+  const exportCSV =   async () => {
+    const params = {
+      per_page: "100000",
+      search: search,
+      componenttype: componentType,
+      active: status === "active" ? 1 : 0,
+      inactive: status === "disable" ? 1 : 0,
+      battery_storage: technologies === "battery_storage" ? 1 : 0,
+      energy_management: technologies === "energy_management" ? 1 : 0,
+      photovoltaic: technologies === "photovoltaic" ? 1 : 0,
+      column: orderBy.name,
+      orderby: orderBy.order,
+      counting: true,
+    };
+    
+    let stringOfParams = qs.stringify(params);
+    
+    let { data } = await API(
+      "get",
+      "manager/components?" + stringOfParams
+      );
+    makeExportData(data[2].data);
+
+  };
+
 
   const makeExportData = (data) => {
     let exportData = [];
@@ -229,7 +256,20 @@ export default function ComponentsPanel() {
         Item_number: e.item_number,
         Active: e.componenttypes.active,
         Quantity: e.quantity,
-        Min_Quantity: e.min_quantity
+        Min_Quantity: e.min_quantity,
+        battery_storage: e.battery_storage,
+        description: e.description,
+        energy_management: e.energy_management,
+        is_custom: e.is_custom,
+        language: e.language,
+        manufacturer_modal: e.manufacturer_modal,
+        photovoltaic: e.photovoltaic,
+        price_definition: e.price_definition,
+        price_dependency: e.price_dependency,
+        price_repetition: e.price_repetition,
+        price_type: e.price_type,
+        tags: e.tags,
+        unit: e.unit
       })
     });
     setCsvData(exportData);
@@ -591,6 +631,7 @@ export default function ComponentsPanel() {
                   </Button>
                   <Button
                     variant="contained"
+                    onClick={()=>exportCSV()}
                   >
                     <CSVLink
                       data={csvData}
@@ -638,7 +679,7 @@ export default function ComponentsPanel() {
                         })
                       }
                     >
-                      <MyImage id={v?.id} />
+                      <MyImage id={v?.id} key={v?.id}/>
                     </TableCell>
                   )}
                   {!isMobile && columns[2]?.show && (
@@ -928,13 +969,13 @@ export default function ComponentsPanel() {
 
 const MyImage = ({ id }) => {
   const image = ApiImage(`component-image/${id}`);
-
+  console.log('image :>> ', image);
   return (
     <>
       {image ? (
-        <img alt="..." src={image} width="50" height="50" />
+        <img alt="image" src={image} width="50" height="50" />
       ) : (
-        <img alt="..." src={noImageFound} width="50" height="50" />
+        <img alt="image" src={noImageFound} width="50" height="50" />
       )}
     </>
   );

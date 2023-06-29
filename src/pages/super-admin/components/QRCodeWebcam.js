@@ -6,6 +6,9 @@ import QrReader from "react-qr-reader";
 import { useDispatch } from "react-redux";
 import { InputField } from "../../../components";
 import { openPopUp } from "../../../store/reducer";
+import API from "../../../axios";
+
+
 function QRCodeWebcam({ handleClose, getData }) {
   const dispatch = new useDispatch();
   const [IsLoading, setIsLoading] = useState(false);
@@ -57,12 +60,22 @@ function QRCodeWebcam({ handleClose, getData }) {
       .catch((error) => {
         handleClose();
         setIsLoading(false);
-        dispatch(
-          openPopUp({
-            message: error?.response?.data?.message,
-            type: "error",
-          })
-        );
+        if(error.response.status === 401) {
+          console.log('error.response.status :>> ', error.response.status);
+          dispatch(
+            openPopUp({
+              message: "It's not authorized!",
+              type: "error",
+            })
+          );
+        } else {
+          dispatch(
+            openPopUp({
+              message: error?.response?.data?.message,
+              type: "error",
+            })
+          );
+        }
       });
   };
   return (
@@ -111,7 +124,7 @@ function QRCodeWebcam({ handleClose, getData }) {
             delay={300}
             onError={webcamError}
             onScan={webcamScan(
-              "302,NTllZGFiNjY2NjA4ZGEwYTIwMTg0ODU1ZDFhYTM0OWE=")}
+              "243,MmI5NDIyNTEyYTA2NjBiMDk4ZTcyMzMwMWVlZDc1OGE=")}
             legacyMode={false}
             facingMode={"environment"}
           />

@@ -1,0 +1,131 @@
+{
+    title: 'Silver', //packageName
+    days: [
+        {
+            day: 0,
+            dayName: 'sun',
+            rates: [
+                {
+                    interval: '10-15',
+                    ratePerHour: 20,
+                },
+                {
+                    interval: '15-20',
+                    ratePerHour: 25,
+                },
+                {
+                    interval: '20-01',
+                    ratePerHour: 35,
+                }
+            ]
+        },
+        {
+            day: 1,
+            dayName: 'mon',
+            rates: [
+                {
+                    interval: '10-15',
+                    ratePerHour: 15,
+                },
+                {
+                    interval: '15-20',
+                    ratePerHour: 20,
+                },
+                {
+                    interval: '20-01',
+                    ratePerHour: 30
+                }
+            ],
+        },
+        {
+            day: 2,
+            dayName: 'tue',
+            rates: [
+                {
+                    interval: '10-15',
+                    ratePerHour: 15,
+                },
+                {
+                    interval: '15-20',
+                    ratePerHour: 20,
+                },
+                {
+                    interval: '20-01',
+                    ratePerHour: 30,
+                }
+            ]
+        },
+        {
+            day: 3,
+            dayName: 'wed',
+            rates: [
+                {
+                    interval: '10-15',
+                    ratePerHour: 15,
+                },
+                {
+                    interval: '15-20',
+                    ratePerHour: 20,
+                },
+                {
+                    interval: '20-01',
+                    ratePerHour: 30,
+                }
+            ]
+        },
+        {
+            day: 4,
+            dayName: 'thu',
+            rates: [
+                {
+                    interval: '10-15',
+                    ratePerHour: 15,
+                },
+                {
+                    interval: '15-20',
+                    ratePerHour: 20,
+                },
+                {
+                    interval: '20-01',
+                    ratePerHour: 30,
+                }
+            ]
+        },
+        {
+            day: 5,
+            dayName: 'fri',
+            rates: [
+                {
+                    interval: '10-15',
+                    ratePerHour: 20,
+                },
+                {
+                    interval: '15-20',
+                    ratePerHour: 25,
+                },
+                {
+                    interval: '20-01',
+                    ratePerHour: 35,
+                }
+            ]
+        },
+        {
+            day: 6,
+            dayName: 'sat',
+            rates: [
+                {
+                    interval: '10-15',
+                    ratePerHour: 25,
+                },
+                {
+                    interval: '15-20',
+                    ratePerHour: 30,
+                },
+                {
+                    interval: '20-01',
+                    ratePerHour: 40,
+                }
+            ]
+        }
+    ]
+}
